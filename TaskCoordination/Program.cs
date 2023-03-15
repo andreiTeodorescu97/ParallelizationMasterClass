@@ -21,7 +21,7 @@ namespace TaskCoordination
         private static ManualResetEventSlim mre = new ManualResetEventSlim();
         private static AutoResetEvent are = new AutoResetEvent(false);
 
-        //Semaphore
+        //SemaphoreSlim
         private static SemaphoreSlim sme = new SemaphoreSlim(2, 10);
 
         static void Main(string[] args)

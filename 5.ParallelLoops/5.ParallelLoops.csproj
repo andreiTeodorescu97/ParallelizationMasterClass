@@ -6,4 +6,8 @@
     <RootNamespace>_5.ParallelLoops</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.5" />
+  </ItemGroup>
+
 </Project>
