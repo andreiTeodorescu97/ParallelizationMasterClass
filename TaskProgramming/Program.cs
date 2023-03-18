@@ -212,7 +212,7 @@ namespace TaskProgramming
         private static void StartingTaskExample()
         {
             Task.Factory.StartNew(() => Write('.'));
-            var t = new Task(() => Write('?'));
+            //var t = new Task(() => Write('?'));
 
             var t = new Task(Write, "hello");
             t.Start();
