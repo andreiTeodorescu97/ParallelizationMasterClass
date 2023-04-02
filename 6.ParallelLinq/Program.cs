@@ -10,9 +10,9 @@ namespace _6.ParallelLinq
     {
         static void Main(string[] args)
         {
-            //AsParallelExample();
-            //CancellationExample();
-            //MergeExample();
+            AsParallelExample();
+            CancellationExample();
+            MergeExample();
 
             //Secvential
             var sum = Enumerable.Range(1, 1000).Sum();
@@ -30,6 +30,7 @@ namespace _6.ParallelLinq
                     (partialSum, i) => partialSum += i,
                     (total, subtotal) => total += subtotal,
                     i => i);
+
             Console.WriteLine(sumP.ToString());
         }
 
